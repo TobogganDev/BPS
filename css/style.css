@@ -18,29 +18,75 @@ p {
   font-weight: 400;
 }
 
-.extralight {
-  font-weight: 200;
+span {
+  font-style: italic;
+  margin-right: 5px;
+  color: #E99F59;
+  transition: 0.4s all ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+span:hover {
+  border-bottom: 3px solid #E99F59;
+}
+
+.accueil-section {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 100px;
+}
+.accueil-section .cta_box {
+  width: 50%;
+}
+.accueil-section .cta_box h2 {
+  margin: 25px 0;
+}
+.accueil-section .cta_box .cta_button {
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  background-color: #E99F59;
+  border: 0px;
+  width: 50%;
+  border: 2px solid #E99F59;
+  transition: 0.4s all ease-in-out;
+  letter-spacing: 4px;
+}
+.accueil-section .cta_box .cta_button:hover {
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+.accueil-section .img_box {
+  width: 50%;
+  height: 70vh;
+  border-radius: 15px;
+  background-image: url("https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg");
+  background-size: cover;
 }
 
 .services-section {
+  background-color: grey;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
   padding: 5rem;
 }
 .services-section div {
-  border: 1px solid #000000;
+  background-color: rgb(199, 159, 159);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   height: 200px;
 }
 .services-section div img {
-  border: 1px solid #000000;
   height: 50px;
   width: 50px;
+  background-color: red;
 }
 .team-section {
   padding: 5rem;
