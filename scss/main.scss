@@ -15,8 +15,14 @@ h2{
 
 p{
     font-family: 'Overpass', sans-serif;
+    // Regular
     font-weight: 400;
+    // Extra Light
     // font-weight: 200;
+}
+
+.extralight{
+    font-weight: 200;
 }
 
 .services-section {
@@ -25,7 +31,7 @@ p{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     padding: 5rem;
-
+    
     div {
         background-color: rgb(199, 159, 159);
         display: flex;
@@ -33,14 +39,34 @@ p{
         justify-content: center;
         align-items: center;
         height: 200px;
-
+        
         img {
             height: 50px;
             width: 50px;
             background-color: red;
         }
-
+        
         p {
+        }
+    }
+}
+
+.team-section{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    .team-card{
+        
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 1px solid;
+        }
+        .c-infos{
+            border: 1px solid;
+            padding: 1rem;
         }
     }
 }

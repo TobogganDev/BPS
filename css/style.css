@@ -18,6 +18,10 @@ p {
   font-weight: 400;
 }
 
+.extralight {
+  font-weight: 200;
+}
+
 .services-section {
   background-color: grey;
   display: grid;
@@ -37,6 +41,22 @@ p {
   height: 50px;
   width: 50px;
   background-color: red;
+}
+.team-section {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.team-section .team-card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid;
+}
+.team-section .team-card .c-infos {
+  border: 1px solid;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
