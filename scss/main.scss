@@ -33,13 +33,13 @@ span{
 .accueil-section{
     background-color: grey;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 5rem;
-    gap: 100px;
+    height: 80vh;
     
     .cta_box{
+        color: white;
         width: 50%;
 
         h2{
@@ -54,6 +54,7 @@ span{
             background-color: #E99F59;
             border: 0px;
             width: 50%;
+            color: white;
             border: 2px solid #E99F59;
             transition: 0.4s all ease-in-out;
             letter-spacing: 4px;
@@ -62,14 +63,6 @@ span{
                 letter-spacing: 1px;
             }
         }
-    }
-
-    .img_box{
-        width: 50%;
-        height: 70vh;
-        border-radius: 15px;
-        background-image: url("https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg");
-        background-size: cover;
     }
 }
 
