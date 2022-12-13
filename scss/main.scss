@@ -165,11 +165,17 @@ span{
 .contact-section{
     background-color: #E99F59;
     padding: 5rem;
+    @media screen and (max-width : 700px) {
+        padding: 2rem;
+    }
     h2{
         font-family: 'Bebas Neue', cursive;
         color: white;
         font-size: 3rem;
         font-weight: 400;
+        @media screen and (max-width : 900px) {
+            text-align: center;
+        }
     }
     .c-all{
         margin-top: 2rem;
@@ -181,9 +187,19 @@ span{
             font-weight: 700;
             font-size: 1.5rem;
         }
+        @media screen and (max-width : 900px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
         .c-left{
             width: 50%;
             border-right: 5px solid #3A3A3A;
+            @media screen and (max-width : 900px) {
+                border: none;
+                width: 100%;
+            }
+            
             ul{
                 list-style: none;
                 img{
@@ -201,6 +217,14 @@ span{
         }
         .c-right{
             width: 50%;
+            @media screen and (max-width : 900px) {
+                width: 100%;
+            }
+            h3{
+                @media screen and (max-width : 500px) {
+                    display: none;
+                }
+            }   
             form{
                 margin-top: 1rem;
                 display: flex;
