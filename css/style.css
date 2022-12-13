@@ -356,32 +356,5 @@ span:hover {
   font-family: "Overpass", sans-serif;
   cursor: pointer;
 }
-.contact-section {
-  padding: 5rem;
-}
-.contact-section .c-all {
-  margin-top: 2rem;
-  display: flex;
-  gap: 4rem;
-}
-.contact-section .c-all .c-left {
-  width: 50%;
-}
-.contact-section .c-all .c-left ul {
-  list-style: none;
-}
-.contact-section .c-all .c-left ul img {
-  border: 1px solid;
-  width: 20px;
-  height: 20px;
-}
-.contact-section .c-all .c-right {
-  width: 50%;
-}
-.contact-section .c-all .c-right form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
 
 /*# sourceMappingURL=style.css.map */

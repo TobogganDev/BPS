@@ -358,36 +358,3 @@ span{
     }
     
 }
-
-.contact-section{
-    padding: 5rem;
-    .c-all{
-        margin-top: 2rem;
-        display: flex;
-        gap: 4rem;
-        .c-left{
-            width: 50%;
-            h3{
-    
-            }
-            ul{
-                list-style: none;
-                img{
-                    border: 1px solid;
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
-        .c-right{
-            width: 50%;
-            form{
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-            }
-            
-        }
-    }
-    
-}
