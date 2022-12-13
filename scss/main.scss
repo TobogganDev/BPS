@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+
+$overpass : 'Overpass', sans-serif;
+$bebas : 'Bebas Neue', cursive;
+
 h1{
     font-family: 'Bebas Neue', cursive;
 }
@@ -123,32 +127,82 @@ span{
 }
 
 .contact-section{
+    background-color: #E99F59;
     padding: 5rem;
+    h2{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 3rem;
+        font-weight: 400;
+    }
     .c-all{
         margin-top: 2rem;
         display: flex;
-        // justify-content: space-between;
         gap: 4rem;
+        font-family: 'Overpass', sans-serif;
+        h3{
+            color: #3A3A3A;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
         .c-left{
             width: 50%;
-            h3{
-    
-            }
+            border-right: 5px solid #3A3A3A;
             ul{
                 list-style: none;
                 img{
-                    border: 1px solid;
-                    width: 20px;
-                    height: 20px;
+                    width: 30px;
+                    height: 30px;
+                }
+                li{
+                    margin-top: 1rem;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
                 }
             }
         }
         .c-right{
             width: 50%;
             form{
+                margin-top: 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: start;
+                input,textarea{
+                    border-radius: 30px;
+                    padding: 16px 25px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    opacity: 80%;
+                    outline: none;
+                    &::placeholder{
+                        font-family: 'Overpass', sans-serif;
+                        color: #3A3A3A;
+                        opacity: 40%;
+                        font-size: 1rem;
+                    }
+                }
+
+                textarea{
+                    opacity: 60%;
+                    resize: none;
+                }
+                .f-submit{
+                    width: fit-content;
+                    background-color: #3A3A3A;
+                    opacity: 100%;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    align-self: flex-end;
+                    font-family: 'Overpass', sans-serif;
+                    cursor: pointer;
+                    &:hover{
+
+                    }
+                }
             }
             
         }
