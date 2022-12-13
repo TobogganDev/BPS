@@ -89,24 +89,73 @@ span:hover {
   background-color: red;
 }
 .team-section {
+  color: #3A3A3A;
   padding: 5rem;
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
 }
-.team-section .team-card2 {
+@media screen and (max-width: 700px) {
+  .team-section {
+    padding: 2rem;
+  }
+}
+.team-section h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 900px) {
+  .team-section h2 {
+    text-align: center;
+  }
+}
+.team-section .c-card {
+  margin-top: 2rem;
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  background: rgb(199, 159, 159);
-  padding: 20px 20px;
+  justify-content: center;
+  gap: 10rem;
 }
-.team-section .team-card2 img {
-  width: 100px;
-  height: 100px;
-  border: 1px solid;
+@media screen and (max-width: 900px) {
+  .team-section .c-card {
+    gap: 0;
+    justify-content: space-around;
+  }
 }
-.team-section .team-card2 .c-infos2 .name {
-  padding-bottom: 1rem;
+@media screen and (max-width: 600px) {
+  .team-section .c-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.team-section .c-card .t-card {
+  width: 30%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .team-section .c-card .t-card {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+.team-section .c-card .t-card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  .team-section .c-card .t-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+.team-section .c-card .t-card h3 {
+  padding-top: 2rem;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+}
+.team-section .c-card .t-card p {
+  padding-top: 2rem;
+  text-align: start;
 }
 
 .contact-section {
