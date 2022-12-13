@@ -93,17 +93,6 @@ span:hover {
   display: flex;
   gap: 3rem;
 }
-.team-section .team-card img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid;
-}
-.team-section .team-card .c-infos {
-  border: 1px solid;
-  padding: 1rem;
-}
 .team-section .team-card2 {
   display: flex;
   align-items: center;
@@ -118,6 +107,34 @@ span:hover {
 }
 .team-section .team-card2 .c-infos2 .name {
   padding-bottom: 1rem;
+}
+
+.contact-section {
+  padding: 5rem;
+}
+.contact-section .c-all {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+.contact-section .c-all .c-left {
+  width: 50%;
+}
+.contact-section .c-all .c-left ul {
+  list-style: none;
+}
+.contact-section .c-all .c-left ul img {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+}
+.contact-section .c-all .c-right {
+  width: 50%;
+}
+.contact-section .c-all .c-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 /*# sourceMappingURL=style.css.map */
