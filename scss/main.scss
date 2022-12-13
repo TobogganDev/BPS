@@ -36,7 +36,10 @@ span{
     align-items: center;
     justify-content: flex-start;
     padding: 5rem;
+    margin: 20px;
     height: 80vh;
+    background-image: url("../img/bg_accueil.png");
+    background-size: cover;
     
     .cta_box{
         color: white;
