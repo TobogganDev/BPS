@@ -130,6 +130,9 @@ header{
     .cta_box{
         color: white;
         width: 50%;
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
 
         h2{
             margin: 25px 0;
@@ -150,6 +153,14 @@ header{
             &:hover{
                 background-color: transparent; // ou Blanc (en fonction du fond)
                 letter-spacing: 1px;
+            }
+            @media screen and (max-width: 1200px) {
+                width: 90%;
+            }
+            @media screen and (max-width: 700px) {
+                letter-spacing: 0px;
+                font-size: 1.5em;
+                width: 100%;
             }
         }
     }
@@ -182,8 +193,9 @@ header{
 }
 
 .team-section{
+    display: none;
     padding: 5rem;
-    display: flex;
+    // display: flex;
     gap: 3rem;
     .team-card{
         img{
