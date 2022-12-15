@@ -362,7 +362,11 @@ header nav li a:hover {
   font-size: 1.5rem;
   opacity: 80%;
   font-weight: 700;
-  text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card .c-info .t-info h3 {
+    text-align: center;
+  }
 }
 .team-section .c-card .t-card .c-info .t-info p {
   font-weight: 200;
@@ -429,6 +433,10 @@ header nav li a:hover {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+.contact-section .c-all .c-left ul li a {
+  text-decoration: none;
+  color: white;
 }
 .contact-section .c-all .c-left .c-networks {
   margin-top: 2rem;
