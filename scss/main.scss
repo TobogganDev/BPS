@@ -154,13 +154,16 @@ header{
         }
     }
     
-    .networks{
+    .header-networks{
         display: none;
-        margin-top: 50px;
         @media screen and (max-width: 900px) {
             display: inline-flex;
             gap: 2rem;
             align-items: center;
+        }
+        li a img{
+            width: 30px;
+            height: 30px;
         }
     }
 }
@@ -224,7 +227,7 @@ header{
         display: flex;
         gap: 3rem;
         
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1100px) {
             flex-direction: column;
         }
         
@@ -245,7 +248,7 @@ header{
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
-                @media screen and (max-width : 500px) {
+                @media screen and (max-width : 1100px) {
                     width: 200px;
                     height: 200px;
                 }
@@ -253,6 +256,7 @@ header{
             
             p {
                 text-align: justify;
+                font-weight: 200;
             }
         }
     }
@@ -275,6 +279,33 @@ header{
     @media screen and (max-width : 900px) {
         padding: 2rem;
     }
+    .r-services{
+        @media screen and (max-width : 800px) {
+            display: block;
+        }
+        margin-top: 2rem;
+        
+        > div{
+            background-color: #E99F59;
+            margin-bottom: 2rem;
+            .r-title{
+                display: flex;
+                justify-content: space-between;
+                padding: 1.5rem;
+                align-items: center;
+                color: white;
+                font-weight: 700;
+            }
+            .r-content{
+                display: none;
+            }
+        }
+        .last{
+            margin-bottom: 0;
+        }
+    }
+    
+    
     
     .c-services{
         display: grid;
@@ -286,7 +317,7 @@ header{
         }
         
         @media screen and (max-width: 800px) {
-            grid-template-columns: minmax(0, 1fr);
+            display: none;
         }
         > div {
             background-color: #E99F59;

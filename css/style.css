@@ -158,16 +158,19 @@ header nav li a:hover {
     font-size: 2.4em;
   }
 }
-header .networks {
+header .header-networks {
   display: none;
-  margin-top: 50px;
 }
 @media screen and (max-width: 900px) {
-  header .networks {
+  header .header-networks {
     display: inline-flex;
     gap: 2rem;
     align-items: center;
   }
+}
+header .header-networks li a img {
+  width: 30px;
+  height: 30px;
 }
 
 .accueil-section {
@@ -238,7 +241,7 @@ header .networks {
   display: flex;
   gap: 3rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   .entreprise-section > div {
     flex-direction: column;
   }
@@ -260,7 +263,7 @@ header .networks {
   height: 300px;
   border-radius: 50%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
   .entreprise-section > div > div img {
     width: 200px;
     height: 200px;
@@ -268,6 +271,7 @@ header .networks {
 }
 .entreprise-section > div > div p {
   text-align: justify;
+  font-weight: 200;
 }
 .entreprise-section h2 {
   color: #3A3A3A;
@@ -291,6 +295,32 @@ header .networks {
     padding: 2rem;
   }
 }
+.services-section .r-services {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .services-section .r-services {
+    display: block;
+  }
+}
+.services-section .r-services > div {
+  background-color: #E99F59;
+  margin-bottom: 2rem;
+}
+.services-section .r-services > div .r-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+.services-section .r-services > div .r-content {
+  display: none;
+}
+.services-section .r-services .last {
+  margin-bottom: 0;
+}
 .services-section .c-services {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -304,7 +334,7 @@ header .networks {
 }
 @media screen and (max-width: 800px) {
   .services-section .c-services {
-    grid-template-columns: minmax(0, 1fr);
+    display: none;
   }
 }
 .services-section .c-services > div {
