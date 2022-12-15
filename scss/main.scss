@@ -45,11 +45,11 @@ span{
     
     .cta_box{
         width: 50%;
-
+        
         h2{
             margin: 25px 0;
         }
-
+        
         .cta_button{
             padding: 15px;
             border-radius: 50px;
@@ -67,7 +67,7 @@ span{
             }
         }
     }
-
+    
     .img_box{
         width: 50%;
         height: 70vh;
@@ -83,7 +83,7 @@ span{
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     padding: 5rem;
-
+    
     div {
         background-color: rgb(199, 159, 159);
         display: flex;
@@ -91,13 +91,13 @@ span{
         justify-content: center;
         align-items: center;
         height: 200px;
-
+        
         img {
             height: 50px;
             width: 50px;
             background-color: red;
         }
-
+        
         p {
         }
     }
@@ -121,42 +121,51 @@ span{
     }
     .c-card{
         margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        gap: 10rem;
-        @media screen and (max-width : 900px) {
-            gap: 0;
-            justify-content: space-around;
-        }
-        @media screen and (max-width : 600px) {
-            flex-direction: column;
-            align-items: center ;
-        }
+        font-family: $overpass;
+        // display: flex;
+        // justify-content: center;
+        width: 70%;
+        margin: auto;
         .t-card{
-            width: 30%;
-            text-align: center;
-            @media screen and (max-width : 600px) {
-                width: 100%;
-                padding-bottom: 2rem;
-            }
-            img{
-                width: 300px;
-                height: 300px;
-                border-radius: 50%;
-                @media screen and (max-width : 900px){
-                    width: 100%;
-                    height: auto;
+            display: flex;
+            .t-man{
+                position: relative;
+                text-align: center;
+                img{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+                }
+                h3{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    opacity: 80%;
                 }
             }
-            h3{
-                padding-top: 2rem;
-                font-family: $overpass;
-                font-size: 1.5rem;
+            .c-info{
+                display: flex;
+                margin-top: 2rem;
+                gap: 1rem;
+                .line{
+                    margin-top: 10px;
+                    width: 250px;
+                    border-top: 1px solid #3A3A3A;
+                }
+                .t-info{
+                    width: 300px;
+                    h3{
+                        font-size: 1.5rem;
+                        opacity: 80%;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-weight: 200;
+                    }
+                }
             }
-            p{
-                padding-top: 2rem;
-                text-align: start;
-            }
+            
         }
     }
     
@@ -244,7 +253,7 @@ span{
                         font-size: 1rem;
                     }
                 }
-
+                
                 textarea{
                     opacity: 60%;
                     resize: none;
@@ -260,7 +269,7 @@ span{
                     font-family: 'Overpass', sans-serif;
                     cursor: pointer;
                     &:hover{
-
+                        
                     }
                 }
             }
