@@ -34,21 +34,32 @@ span:hover {
 }
 
 header {
-  height: 15vh;
-  background-color: #E99F59;
+  height: 6rem;
+  background-color: #353435;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+header .logo_bps {
+  position: absolute;
+  left: 4rem;
+  min-width: 107px;
+}
+@media screen and (max-width: 500px) {
+  header .logo_bps {
+    left: 2rem;
+    width: 16%;
+    min-width: 66px;
+  }
+}
 header .picto {
-  background-color: red;
   height: 3px;
   width: 2.2em;
   display: none;
   position: absolute;
   z-index: 5;
-  right: 2em;
+  right: 2rem;
   transition: 0.7s all ease-in-out;
   border-top: 6px solid #ffffff;
 }
@@ -64,6 +75,7 @@ header .picto::before {
   border-top: 6px solid #ffffff;
   height: 3px;
   width: 2.2em;
+  transition: 0.4s all ease-in-out;
 }
 header .picto::after {
   content: "";
@@ -72,14 +84,41 @@ header .picto::after {
   border-top: 6px solid #ffffff;
   height: 3px;
   width: 2.2em;
+  transition: 0.4s all ease-in-out;
+}
+header .close_icon {
+  transform: rotate(45deg);
+}
+header .close_icon::before {
+  transform: rotate(90deg);
+  margin-top: 12px;
+  margin-left: -1px;
+}
+header .close_icon::after {
+  opacity: 0;
 }
 header .open {
   transform: translate(0, 0);
 }
 header nav {
   display: inline-flex;
-  gap: 50px;
+  gap: 150px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px) {
+  header nav {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header nav {
+    gap: 70px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header nav {
+    gap: 40px;
+  }
 }
 @media screen and (max-width: 900px) {
   header nav {
@@ -87,14 +126,14 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 15vh 2em;
-    gap: 5vh;
-    background-color: #E99F59;
-    height: 100vh;
+    padding: 15vh 2em 0em 0em;
+    gap: 1.3rem;
+    background-color: #353435;
+    height: 80vh;
     width: 100vw;
     position: absolute;
-    bottom: 0;
-    transform: translate(-1000px, 0);
+    top: 0;
+    transform: translate(0px, -1000px);
   }
 }
 header nav li {
@@ -117,6 +156,17 @@ header nav li a:hover {
 @media screen and (max-width: 900px) {
   header nav li a {
     font-size: 2.4em;
+  }
+}
+header .networks {
+  display: none;
+  margin-top: 50px;
+}
+@media screen and (max-width: 900px) {
+  header .networks {
+    display: inline-flex;
+    gap: 2rem;
+    align-items: center;
   }
 }
 

@@ -39,21 +39,31 @@ span{
 }
 
 header{
-    height: 15vh;
-    background-color: #E99F59;
+    height: 6rem;
+    background-color: #353435;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
+    .logo_bps{
+        position: absolute;
+        left: 4rem;
+        min-width: 107px;
+        @media screen and (max-width: 500px) {
+            left: 2rem;
+            width: 16%;
+            min-width: 66px;
+        }
+    }
+
     .picto{
-        background-color: red;
         height: 3px;
         width: 2.2em;
         display: none;
         position: absolute;
         z-index: 5;
-        right: 2em;
+        right: 2rem;
         transition: 0.7s all ease-in-out;
         border-top: 6px solid #ffffff;
         @media screen and (max-width: 900px) {
@@ -66,6 +76,7 @@ header{
             border-top: 6px solid #ffffff;
             height: 3px;
             width: 2.2em;
+            transition: 0.4s all ease-in-out;
         }
         &::after{
             content: "";
@@ -74,6 +85,18 @@ header{
             border-top: 6px solid #ffffff;
             height: 3px;
             width: 2.2em;
+            transition: 0.4s all ease-in-out;
+        }
+    }
+    .close_icon{
+        transform: rotate(45deg);
+        &::before{
+            transform: rotate(90deg);
+            margin-top: 12px;
+            margin-left: -1px;
+        }
+        &::after{
+            opacity: 0;
         }
     }
     .open{
@@ -81,22 +104,30 @@ header{
     }
     nav{
         display: inline-flex;
-        gap: 50px;
+        gap: 150px;
         flex-wrap: wrap;
-        
+        @media screen and (max-width: 1400px) {
+            gap: 100px;
+        }
+        @media screen and (max-width: 1200px) {
+            gap: 70px;
+        }
+        @media screen and (max-width: 1050px) {
+            gap: 40px;
+        }
         @media screen and (max-width: 900px) {
             transition: 0.7s all ease-in-out;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            padding: 15vh 2em;
-            gap: 5vh;
-            background-color: #E99F59;
-            height: 100vh;
+            padding: 15vh 2em 0em 0em;
+            gap: 1.3rem;
+            background-color: #353435;
+            height: 80vh;
             width: 100vw;
             position: absolute;
-            bottom: 0;
-            transform: translate(-1000px, 0);
+            top: 0;
+            transform: translate(0px, -1000px);
         }
         
         
@@ -120,6 +151,16 @@ header{
                     font-size: 2.4em;
                 }
             }
+        }
+    }
+    
+    .networks{
+        display: none;
+        margin-top: 50px;
+        @media screen and (max-width: 900px) {
+            display: inline-flex;
+            gap: 2rem;
+            align-items: center;
         }
     }
 }
