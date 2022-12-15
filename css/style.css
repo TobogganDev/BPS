@@ -165,12 +165,12 @@ header nav li a:hover {
     width: 90%;
   }
 }
-@media screen and (max-width: 700px) {
-  .accueil-section .cta_box .cta_button {
-    letter-spacing: 0px;
-    font-size: 1.5em;
-    width: 100%;
-  }
+.accueil-section .cta_box .img_box {
+  width: 50%;
+  height: 70vh;
+  border-radius: 15px;
+  background-image: url("https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg");
+  background-size: cover;
 }
 
 .entreprise-section {
@@ -326,109 +326,119 @@ header nav li a:hover {
     padding-bottom: 2rem;
   }
 }
-.team-section .c-card .t-card img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+@media screen and (max-width: 700px) {
+  .team-section .c-card .t-card {
+    letter-spacing: 0px;
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .team-section .c-card .t-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) and (max-width: 900px) {
   .team-section .c-card .t-card img {
     width: 100%;
     height: auto;
   }
 }
-.team-section .c-card .t-card h3 {
-  padding-top: 2rem;
-  font-family: "Overpass", sans-serif;
-  font-size: 1.5rem;
+@media screen and (max-width: 700px) {
+  .team-section .c-card .t-card h3 {
+    padding-top: 2rem;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5rem;
+  }
 }
-.team-section .c-card .t-card p {
-  padding-top: 2rem;
-  text-align: start;
+@media screen and (max-width: 700px) {
+  .team-section .c-card .t-card p {
+    padding-top: 2rem;
+    text-align: start;
+  }
 }
-
-.contact-section {
+.team-section .contact-section {
   background-color: #E99F59;
   padding: 5rem;
 }
 @media screen and (max-width: 700px) {
-  .contact-section {
+  .team-section .contact-section {
     padding: 2rem;
   }
 }
-.contact-section h2 {
+.team-section .contact-section h2 {
   font-family: "Bebas Neue", cursive;
   color: white;
   font-size: 3rem;
   font-weight: 400;
 }
 @media screen and (max-width: 900px) {
-  .contact-section h2 {
+  .team-section .contact-section h2 {
     text-align: center;
   }
 }
-.contact-section .c-all {
+.team-section .contact-section .c-all {
   margin-top: 2rem;
   display: flex;
   gap: 4rem;
   font-family: "Overpass", sans-serif;
 }
-.contact-section .c-all h3 {
+.team-section .contact-section .c-all h3 {
   color: #3A3A3A;
   font-weight: 700;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 900px) {
-  .contact-section .c-all {
+  .team-section .contact-section .c-all {
     flex-direction: column-reverse;
     align-items: center;
     gap: 0;
   }
 }
-.contact-section .c-all .c-left {
+.team-section .contact-section .c-all .c-left {
   width: 50%;
   border-right: 5px solid #3A3A3A;
 }
 @media screen and (max-width: 900px) {
-  .contact-section .c-all .c-left {
+  .team-section .contact-section .c-all .c-left {
     border: none;
     width: 100%;
   }
 }
-.contact-section .c-all .c-left ul {
+.team-section .contact-section .c-all .c-left ul {
   list-style: none;
 }
-.contact-section .c-all .c-left ul img {
+.team-section .contact-section .c-all .c-left ul img {
   width: 30px;
   height: 30px;
 }
-.contact-section .c-all .c-left ul li {
+.team-section .contact-section .c-all .c-left ul li {
   margin-top: 1rem;
   color: white;
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
-.contact-section .c-all .c-right {
+.team-section .contact-section .c-all .c-right {
   width: 50%;
 }
 @media screen and (max-width: 900px) {
-  .contact-section .c-all .c-right {
+  .team-section .contact-section .c-all .c-right {
     width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
-  .contact-section .c-all .c-right h3 {
+  .team-section .contact-section .c-all .c-right h3 {
     display: none;
   }
 }
-.contact-section .c-all .c-right form {
+.team-section .contact-section .c-all .c-right form {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-.contact-section .c-all .c-right form input, .contact-section .c-all .c-right form textarea {
+.team-section .contact-section .c-all .c-right form input, .team-section .contact-section .c-all .c-right form textarea {
   border-radius: 30px;
   padding: 16px 25px;
   border: none;
@@ -436,17 +446,17 @@ header nav li a:hover {
   opacity: 80%;
   outline: none;
 }
-.contact-section .c-all .c-right form input::placeholder, .contact-section .c-all .c-right form textarea::placeholder {
+.team-section .contact-section .c-all .c-right form input::placeholder, .team-section .contact-section .c-all .c-right form textarea::placeholder {
   font-family: "Overpass", sans-serif;
   color: #3A3A3A;
   opacity: 40%;
   font-size: 1rem;
 }
-.contact-section .c-all .c-right form textarea {
+.team-section .contact-section .c-all .c-right form textarea {
   opacity: 60%;
   resize: none;
 }
-.contact-section .c-all .c-right form .f-submit {
+.team-section .contact-section .c-all .c-right form .f-submit {
   width: fit-content;
   background-color: #3A3A3A;
   opacity: 100%;
