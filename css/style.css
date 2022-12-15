@@ -299,63 +299,67 @@ header nav li a:hover {
   }
 }
 .team-section .c-card {
-  margin-top: 2rem;
+  font-family: "Overpass", sans-serif;
+  width: 70%;
+  margin: 2rem auto 0 auto;
+}
+.team-section .c-card .t-card {
   display: flex;
-  justify-content: center;
-  gap: 10rem;
 }
-@media screen and (max-width: 900px) {
-  .team-section .c-card {
-    gap: 0;
-    justify-content: space-around;
-  }
-}
-@media screen and (max-width: 600px) {
-  .team-section .c-card {
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card {
     flex-direction: column;
     align-items: center;
   }
 }
-.team-section .c-card .t-card {
-  width: 30%;
+.team-section .c-card .t-card .t-man {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.team-section .c-card .t-card .t-man img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+.team-section .c-card .t-card .t-man h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  opacity: 80%;
+}
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card .t-man h3 {
+    padding-bottom: 1.5rem;
+  }
+}
+.team-section .c-card .t-card .c-info {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.team-section .c-card .t-card .c-info .line {
+  margin-top: 10px;
+  width: 250px;
+  border-top: 1px solid #3A3A3A;
+}
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card .c-info .line {
+    display: none;
+  }
+}
+.team-section .c-card .t-card .c-info .t-info {
+  width: 300px;
+}
+.team-section .c-card .t-card .c-info .t-info h3 {
+  font-size: 1.5rem;
+  opacity: 80%;
+  font-weight: 700;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
-  .team-section .c-card .t-card {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .team-section .c-card .t-card {
-    letter-spacing: 0px;
-    font-size: 1.5em;
-    width: 100%;
-  }
-  .team-section .c-card .t-card img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-}
-@media screen and (max-width: 700px) and (max-width: 900px) {
-  .team-section .c-card .t-card img {
-    width: 100%;
-    height: auto;
-  }
-}
-@media screen and (max-width: 700px) {
-  .team-section .c-card .t-card h3 {
-    padding-top: 2rem;
-    font-family: "Overpass", sans-serif;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  .team-section .c-card .t-card p {
-    padding-top: 2rem;
-    text-align: start;
-  }
+.team-section .c-card .t-card .c-info .t-info p {
+  font-weight: 200;
 }
 .team-section .contact-section {
   background-color: #E99F59;
