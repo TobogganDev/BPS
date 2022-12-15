@@ -110,17 +110,23 @@ span:hover {
   }
 }
 .team-section .c-card {
-  margin-top: 2rem;
   font-family: "Overpass", sans-serif;
   width: 70%;
-  margin: auto;
+  margin: 2rem auto 0 auto;
 }
 .team-section .c-card .t-card {
   display: flex;
 }
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .team-section .c-card .t-card .t-man {
-  position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .team-section .c-card .t-card .t-man img {
   width: 300px;
@@ -134,6 +140,11 @@ span:hover {
   font-size: 1.5rem;
   opacity: 80%;
 }
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card .t-man h3 {
+    padding-bottom: 1.5rem;
+  }
+}
 .team-section .c-card .t-card .c-info {
   display: flex;
   margin-top: 2rem;
@@ -144,6 +155,11 @@ span:hover {
   width: 250px;
   border-top: 1px solid #3A3A3A;
 }
+@media screen and (max-width: 1100px) {
+  .team-section .c-card .t-card .c-info .line {
+    display: none;
+  }
+}
 .team-section .c-card .t-card .c-info .t-info {
   width: 300px;
 }
@@ -151,6 +167,7 @@ span:hover {
   font-size: 1.5rem;
   opacity: 80%;
   font-weight: 700;
+  text-align: center;
 }
 .team-section .c-card .t-card .c-info .t-info p {
   font-weight: 200;
