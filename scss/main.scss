@@ -280,6 +280,7 @@ header{
         padding: 2rem;
     }
     .r-services{
+        display: none;
         @media screen and (max-width : 800px) {
             display: block;
         }
