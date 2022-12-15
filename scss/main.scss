@@ -343,110 +343,112 @@ header{
         
     }
     
-    .contact-section{
-        background-color: #E99F59;
-        padding: 5rem;
-        @media screen and (max-width : 700px) {
-            padding: 2rem;
+    
+}
+
+.contact-section{
+    background-color: #E99F59;
+    padding: 5rem;
+    @media screen and (max-width : 700px) {
+        padding: 2rem;
+    }
+    h2{
+        font-family: 'Bebas Neue', cursive;
+        color: white;
+        font-size: 3rem;
+        font-weight: 400;
+        @media screen and (max-width : 900px) {
+            text-align: center;
         }
-        h2{
-            font-family: 'Bebas Neue', cursive;
-            color: white;
-            font-size: 3rem;
-            font-weight: 400;
-            @media screen and (max-width : 900px) {
-                text-align: center;
-            }
+    }
+    .c-all{
+        margin-top: 2rem;
+        display: flex;
+        gap: 4rem;
+        font-family: 'Overpass', sans-serif;
+        h3{
+            color: #3A3A3A;
+            font-weight: 700;
+            font-size: 1.5rem;
         }
-        .c-all{
-            margin-top: 2rem;
-            display: flex;
-            gap: 4rem;
-            font-family: 'Overpass', sans-serif;
-            h3{
-                color: #3A3A3A;
-                font-weight: 700;
-                font-size: 1.5rem;
-            }
+        @media screen and (max-width : 900px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 0;
+        }
+        .c-left{
+            width: 50%;
+            border-right: 5px solid #3A3A3A;
             @media screen and (max-width : 900px) {
-                flex-direction: column-reverse;
-                align-items: center;
-                gap: 0;
+                border: none;
+                width: 100%;
             }
-            .c-left{
-                width: 50%;
-                border-right: 5px solid #3A3A3A;
-                @media screen and (max-width : 900px) {
-                    border: none;
-                    width: 100%;
+            
+            ul{
+                list-style: none;
+                img{
+                    width: 30px;
+                    height: 30px;
                 }
-                
-                ul{
-                    list-style: none;
-                    img{
-                        width: 30px;
-                        height: 30px;
-                    }
-                    li{
-                        margin-top: 1rem;
-                        color: white;
-                        display: flex;
-                        align-items: center;
-                        gap: 1.5rem;
-                    }
-                }
-            }
-            .c-right{
-                width: 50%;
-                @media screen and (max-width : 900px) {
-                    width: 100%;
-                }
-                h3{
-                    @media screen and (max-width : 500px) {
-                        display: none;
-                    }
-                }   
-                form{
+                li{
                     margin-top: 1rem;
+                    color: white;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: start;
-                    input,textarea{
-                        border-radius: 30px;
-                        padding: 16px 25px;
-                        border: none;
-                        margin-bottom: 1rem;
-                        opacity: 80%;
-                        outline: none;
-                        &::placeholder{
-                            font-family: 'Overpass', sans-serif;
-                            color: #3A3A3A;
-                            opacity: 40%;
-                            font-size: 1rem;
-                        }
-                    }
-                    
-                    textarea{
-                        opacity: 60%;
-                        resize: none;
-                    }
-                    .f-submit{
-                        width: fit-content;
-                        background-color: #3A3A3A;
-                        opacity: 100%;
-                        color: white;
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        align-self: flex-end;
+                    align-items: center;
+                    gap: 1.5rem;
+                }
+            }
+        }
+        .c-right{
+            width: 50%;
+            @media screen and (max-width : 900px) {
+                width: 100%;
+            }
+            h3{
+                @media screen and (max-width : 500px) {
+                    display: none;
+                }
+            }   
+            form{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                input,textarea{
+                    border-radius: 30px;
+                    padding: 16px 25px;
+                    border: none;
+                    margin-bottom: 1rem;
+                    opacity: 80%;
+                    outline: none;
+                    &::placeholder{
                         font-family: 'Overpass', sans-serif;
-                        cursor: pointer;
-                        &:hover{
-                            
-                        }
+                        color: #3A3A3A;
+                        opacity: 40%;
+                        font-size: 1rem;
                     }
                 }
                 
+                textarea{
+                    opacity: 60%;
+                    resize: none;
+                }
+                .f-submit{
+                    width: fit-content;
+                    background-color: #3A3A3A;
+                    opacity: 100%;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    align-self: flex-end;
+                    font-family: 'Overpass', sans-serif;
+                    cursor: pointer;
+                    &:hover{
+                        
+                    }
+                }
             }
+            
         }
     }
 }
