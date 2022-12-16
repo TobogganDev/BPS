@@ -22,4 +22,5 @@
   ];
   $response = $mj->post(Resources::$Email, ['body' => $body]);
   $response->success();
+  header('Location:index.html')
 ?>
