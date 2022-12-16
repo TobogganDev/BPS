@@ -305,9 +305,38 @@ header{
                 align-items: center;
                 color: white;
                 font-weight: 700;
+                img{
+                    transition: 0.4s all ease-in-out;
+                }
+                .open_arrow{
+                    transform: rotate(180deg);
+                }
             }
             .r-content{
-                display: none;
+                height: 0;
+                transition: 0.4s all ease-in-out;
+                p{
+                    opacity: 0;
+                }
+                img{
+                    display: none;
+                }
+            }
+            .open_service{
+                display: flex;
+                flex-direction: row;
+                height: 20vh;
+                transition: 0.4s all ease-in-out;
+                p{
+                    padding-left: 1.5rem;
+                    opacity: 1;
+                    color: #3A3A3A;
+                    transition: 0.7s all ease-in-out;
+                }
+                img{
+                    max-width: 8rem;
+                    display: block;
+                }
             }
         }
         .last{
