@@ -22,11 +22,11 @@
     <img src="img/logo_bps_header.png" alt="Logo BPS" class="logo_bps">
     <div class="picto"></div>
     <nav>
-      <li><a href="">ACCUEIL</a></li>
-      <li><a href="">L’entreprise</a></li>
-      <li><a href="">SERVICES</a></li>
-      <li><a href="">L’EQUIPE</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li><a href="#home">ACCUEIL</a></li>
+      <li><a href="#company">L’entreprise</a></li>
+      <li><a href="#company">SERVICES</a></li>
+      <li><a href="#team">L’EQUIPE</a></li>
+      <li><a href="#contact">CONTACT</a></li>
       <ul class="header-networks">
         <li><a href=""><img src="img/linkedin.svg" alt=""></a></li>
         <li><a href=""><img src="img/facebook.svg" alt=""></a></li>
@@ -36,7 +36,7 @@
   </header>
   
   <!-- section accueil -->
-  <div class="accueil-section">
+  <div class="accueil-section" id="home">
     <div class="cta_box">
       <h1 class="">
         slogan
@@ -44,12 +44,14 @@
       <h2 class="">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
       </h2>
-      <button class="cta_button" onclick=""><p>Nous contacter</p></button>
+      <button class="cta_button" onclick="">
+        <a href="#contact">Nous contacter</a>
+      </button>
     </div>
   </div>
   
   <!-- section entreprise -->
-  <section class="entreprise-section">
+  <section class="entreprise-section" id="company">
     <h2>L'entreprise</h2>
     <div>
       <div>
@@ -71,7 +73,7 @@
   </section>
   
   <!-- section services -->
-  <section class="services-section">
+  <section class="services-section" id="services">
     <h2>Nos services</h2>
     <div class="r-services">
       <div>
@@ -181,7 +183,7 @@
     </div>
   </section>
   
-  <div class="team-section">
+  <div class="team-section" id="team">
     <h2>Dirigeant</h2>
     <div class="c-card">
       <div class="t-card">
@@ -200,7 +202,7 @@
     </div>
   </div>
   
-  <footer class="contact-section">
+  <footer class="contact-section" id="contact">
     <h2>Nous contacter</h2>
     <div class="c-all">
       <div class="c-left">
