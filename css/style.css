@@ -548,13 +548,11 @@ header .header-networks li a img {
 .contact-section .c-all .c-left ul li {
   margin-top: 1rem;
   color: white;
+}
+.contact-section .c-all .c-left ul li a {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-.contact-section .c-all .c-left ul li a {
-  text-decoration: none;
-  color: white;
 }
 .contact-section .c-all .c-left .c-networks {
   margin-top: 2rem;

@@ -511,12 +511,11 @@ header{
                 li{
                     margin-top: 1rem;
                     color: white;
-                    display: flex;
-                    align-items: center;
-                    gap: 1.5rem;
+                    
                     a{
-                        text-decoration: none;
-                        color: white;
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
                     }
                 }
             }
